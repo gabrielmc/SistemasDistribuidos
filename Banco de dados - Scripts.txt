@@ -1,0 +1,22 @@
+CREATE TABLE Aluno(
+  
+
+id serial NOT NULL,
+  
+nome character varying(255) NOT NULL,
+  
+matricula character varying(255) NOT NULL,
+  
+curso character varying(255) NOT NULL,
+ 
+CONSTRAINT pessoa_pkey PRIMARY KEY (id)
+
+
+)
+WITH (
+  OIDS=FALSE
+);
+
+
+ALTER TABLE pessoa
+  OWNER TO postgres;
